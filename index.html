@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bibek's Porfolio Website</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Bibek Roy</span><br>From Coochbehar</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Photograph_1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos vitae dolores velit eveniet
+                        dolorum iure consectetur consequatur eius libero. Nam ea perferendis natus! Quam aperiam
+                        perferendis rerum rem obcaecati eveniet? Debitis doloremque, mollitia error sed ducimus
+                        excepturi, sit culpa quis nostrum fugiat nemo accusamus repellat, obcaecati molestias et omnis
+                        tempora.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br><b>Web</b> Developer</li>
+                            <li><span>Front-End</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Coding</span><br><b>C</b> Programmer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June, 2025</span><br>Completed a project on <b>Using Basic Formulas and Functions
+                                    in Microsoft Excell</b> from <b>coursera project network</b></li>
+                            <li><span>September, 2024</span><br>Participated in <b>Smart India Hackathon-2024</b>
+                                (Internal Round)</li>
+                            <li><span>September, 2024</span><br>Take a part of <b>EUREKA 2024</b> - Business Model
+                                Competition(Internal Round), <b>National Enterpreneurship Challenge (E-Cell, IIT
+                                    Bombay)</b></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024-2028</span><br><b>B.Tech</b> from <b>CGEC</b></li>
+                            <li><span>2022-2024</span><br><b>HS</b> form <b>Mathabhanga High School</b></li>
+                            <li><span>2016-2022</span><br><b>Secondary</b> from <b>Mahishmuri High School</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa nulla earum velit soluta ex
+                        veniam vel cumque. Hic, voluptas temporibus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Cyber Cafe</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa nulla earum velit soluta ex
+                        veniam vel cumque. Hic, voluptas temporibus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <h2>Travelling Blog</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa nulla earum velit soluta ex
+                        veniam vel cumque. Hic, voluptas temporibus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Achievements & Rewards</h1>
+            <div class="reward-list">
+                <div class="reward">
+                    <img src="images/reward_1.png" alt="">
+                    <div class="layer">
+                        <h3>Smart India Hackathon-2024</h3>
+                        <p>I've participated on SIH-2024 (Internal Round). It was a really amazing experience to me to
+                            invent innovative somethings.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="reward">
+                    <img src="images/reward_2.png" alt="">
+                    <div class="layer">
+                        <h3>Microsoft Excell Project</h3>
+                        <p>I've succesfully completed <b>Microsoft Excell Project</b> from coursera. It was really
+                            helpful.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="reward">
+                    <img src="images/reward_3.png" alt="">
+                    <div class="layer">
+                        <h3>EUREKA 2024</h3>
+                        <p>I've taken part on EUREKA 2024 which was organised by E-Cell, IIT Bombay. It was first time
+                            for me to impliment our first Business idea.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> viravai2006@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7872239758</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/16rtzN8wpL/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bibek_bro_2006?igsh=ZGw1OWl5MWFqbnE5"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/bibek-roy-"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Bibek22cse"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/My_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows=6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Bibek. Made with <i class="fa-solid fa-heart"></i> VIRA GROUP</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzbrsOIx54UooJN5rWQ4jGHx1R_b3BZ1AX7-thdCWHDeCNrag11z89NCeOxcygSJ_gr/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent succesfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
